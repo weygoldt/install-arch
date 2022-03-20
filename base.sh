@@ -28,7 +28,7 @@ pacman -S grub efibootmgr networkmanager network-manager-applet dialog wpa_suppl
 pacman -S --noconfirm nvidia nvidia-utils nvidia-settings
 
 # Installs grub on efi parition. Change the directory to /boot/efi if you mounted the EFI partition at /boot/efi
-grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB 
+grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB 
 
 # Regenerate grub config to enaible microcode updates
 grub-mkconfig -o /boot/grub/grub.cfg

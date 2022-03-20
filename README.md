@@ -56,9 +56,9 @@ btrfs subvol create @home           # create home partition
 cd
 umount /mnt
 mount -o noatime,space_cache=v2,compress=zstd,ssd,discard=async,subvol=@ /dev/<partition_name_2> /mnt # mount root
-mkdir /mnt/{boot,home} # create dir for home and boot
+mkdir /mnt/{boot,home/efi} # create dir for home and boot
 mount -o noatime,space_cache=v2,compress=zstd,ssd,discard=async,subvol=@home /dev/<partition_name_2> /mnt/home # mount home
-mount /dev/<partition_name_1> /mnt/boot # mount boot
+mount /dev/<partition_name_1> /mnt/boot/efi # mount boot
 lsblk # check if worked
 ```
 8. Install base packages
@@ -79,9 +79,9 @@ arch-chroot /mnt
 ```
 11.  Use base script
 ```sh 
-git clone <link to git repo>
-cd <repo>
-chmod +x <basescript>
+git clone https://github.com/weygoldt/arch-install
+cd <arch-install>
+chmod +x <base.sh>
 # move back to root
 cd /
 ./arch-install/base.sh
@@ -93,7 +93,7 @@ Add modules for file system
 nano /etc/mkinitcpio.conf
 # Then add
 MODULES=(btrfs)
-# Rebuild iniram by running
+# Rebuild initramfs by running
 mkinitcpio -p linux # change if another kernel is installed
 ```
 Some missing firmware warnings are normal
@@ -124,25 +124,15 @@ cd /
 .home/weygoldt/arch-install/kde.sh
 ```
 
-17. Reboot
-```sh
-reboot
-```
-Now we should be greeted with sddm and boot into kde
+17. Reboot - 
+Now we should be greeted with sddm and boot into kde. Login as the created user.
 
-18. Install software with software.sh
+1.  Install software with the scripts provided in `arch-install/software/`.
 
-19. Setup zram
-```sh
-paru -S zramd
-lsblk
-sudo systemctl enable --now zramd.service
-lsblk # now there should be zram listed
-```
-
-20. To do list after installation
-- [ ] Setup timeshift snapshots
-- [ ] Setup external drive backup
-- [ ] Change root and user passwords (default: password)
-- [ ] Install espanso (and incorporate into software.sh)
-- [ ] Clone dotfiles
+2.  To do list after installation
+- Setup timeshift snapshots
+- Clone dotfiles
+- Check that ufw and zram is enabled
+- Setup external drive with system image backup
+- Change root and user passwords (default: password)
+- Add conky startup script to kde startup scripts in system settings
