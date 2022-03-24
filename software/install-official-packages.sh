@@ -1,8 +1,33 @@
 #!/bin/bash
-cd
+cd # change dir to home
+
+PACKAGES=(
+        torbrowser-launcher     # for anonymous browsing
+        torsocks                # for torified shell
+        keepassxc               # for encrypted harddrives
+        veracrypt               # to encrypt harddrives
+        libreoffice             # for university stuff
+        texlive-most            # to write nice theses
+        biber                   # better tex citation backend
+        pandoc                  # document converter
+        firefox                 # standard browser
+        inkscape                # vector editor    
+        qbittorrent             # torrents
+        vlc                     # media player    
+        ufw                     # firewall
+        zsh                     # better shell than bash
+        neofetch                # for quick system overview
+        tk                      # Some python gui lib (was dependency for something?)
+        r                       # statistical computing
+        youtube-dl              # download video and audio
+        conky                   # best system monitor
+        filelight               # disk usage overview
+        cronie                  # from cronjobs (e.g. timeshift)
+        python-pip              # to manage python modules    
+)
 
 # software
-sudo pacman -S --noconfirm torbrowser-launcher torsocks keepassxc veracrypt libreoffice texlive-most biber pandoc firefox inkscape qbittorrent vlc ufw zsh neofetch tk r youtube-dl conky filelight cronie python-pip
+sudo pacman -S --noconfirm ${PACKAGES[@]}
 
 # Enable firewall (did not execute last time?)
 sudo ufw enable

@@ -127,7 +127,7 @@ cd /
 17. Reboot - 
 Now we should be greeted with sddm and boot into kde. Login as the created user.
 
-1.  Install software with the scripts provided in `arch-install/software/`.
+1.  Install software with the scripts provided in `arch-install/software/`. Be sure to use all scripts since they partially depend on each other. E.g. `cronie` is available in the official repositories and `timeshift` only in the AUR but `timeshit` needs `cronie` for scheduled snapshots.
 
 2.  To do list after installation
 - Setup timeshift snapshots
