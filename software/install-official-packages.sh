@@ -2,9 +2,7 @@
 cd
 
 # software
-sudo pacman -S --noconfirm torbrowser-launcher torsocks keepassxc veracrypt libreoffice texlive-most biber pandoc firefox inkscape qbittorrent vlc ufw zsh neofetch tk r youtube-dl conky filelight cronie
-
-
+sudo pacman -S --noconfirm torbrowser-launcher torsocks keepassxc veracrypt libreoffice texlive-most biber pandoc firefox inkscape qbittorrent vlc ufw zsh neofetch tk r youtube-dl conky filelight cronie python-pip
 
 # Enable firewall (did not execute last time?)
 sudo ufw enable
