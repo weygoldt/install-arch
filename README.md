@@ -42,7 +42,9 @@ lsblk                                 # check if partitions were created
 6. Make file systems
 ```sh
 mkfs.fat -F32 /dev/<partition_name_1>
-mkfs.btrfs /dev/<partition_name_2>
+
+# label the partition archlinux
+mkfs.btrfs -L archlinux /dev/<partition_name_2>
 ```
 
 7. Create subvolumes
