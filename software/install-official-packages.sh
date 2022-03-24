@@ -1,6 +1,8 @@
 #!/bin/bash
+
 cd # change dir to home
 
+# package list
 PACKAGES=(
         torbrowser-launcher     # for anonymous browsing
         torsocks                # for torified shell
@@ -26,7 +28,7 @@ PACKAGES=(
         python-pip              # to manage python modules    
 )
 
-# software
+# install package list
 sudo pacman -S --noconfirm ${PACKAGES[@]}
 
 # Enable firewall (did not execute last time?)
@@ -37,4 +39,4 @@ sudo chsh -s /usr/bin/zsh
 
 # Enable cronie so that scheduled timeshift snapshots are actually executed
 systemctl enable cronie.service 
-systemctl start cronie.service 
+systemctl start cronie.service
