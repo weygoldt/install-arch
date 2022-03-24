@@ -18,6 +18,7 @@ PACKAGES=(
     optimus-manager                 # to manage hybrid graphics
     optimus-manager-qt              # a frontend for qt based desktop environments
     zramd                           # to enable zram
+    btrbk                           # makes backups of btrfs snapshots
     #grub-btrfs                     # adds btrfs snapshots to grub (read doc first)
 )
 
