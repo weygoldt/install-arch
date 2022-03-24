@@ -56,7 +56,7 @@ btrfs subvol create @home           # create home partition
 cd
 umount /mnt
 mount -o noatime,space_cache=v2,compress=zstd,ssd,discard=async,subvol=@ /dev/<partition_name_2> /mnt # mount root
-mkdir /mnt/{boot,home/efi} # create dir for home and boot
+mkdir /mnt/{boot/efi,home} # create dir for home and boot
 mount -o noatime,space_cache=v2,compress=zstd,ssd,discard=async,subvol=@home /dev/<partition_name_2> /mnt/home # mount home
 mount /dev/<partition_name_1> /mnt/boot/efi # mount boot
 lsblk # check if worked
