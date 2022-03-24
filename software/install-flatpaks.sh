@@ -1,5 +1,16 @@
 #!/bin/bash
-cd
+cd # change dir to home
+
+PACKAGES=(
+    com.spotify.Client              # music streaming
+    md.obsidian.Obsidian            # obsidian knowledge management
+    net.ankiweb.Anki                # spaced repitition flashcards
+    org.signal.Signal               # signal private messaging
+    org.zotero.Zotero               # zotero citation manager
+    us.zoom.Zoom                    # uni video meetings
+    com.obsproject.Studio           # obs screen recorder    
+    com.github.tchx84.Flatseal      # flatpak permissions GUI
+)
 
 # install used flatpaks
-sudo flatpak install -y com.spotify.Client md.obsidian.Obsidian net.ankiweb.Anki org.signal.Signal org.zotero.Zotero us.zoom.Zoom com.obsproject.Studio com.github.tchx84.Flatseal org.freefilesync.FreeFileSync
+sudo flatpak install -y ${PACKAGES[@]}
