@@ -67,7 +67,7 @@ lsblk # check if worked
 
 There will be some errors since the locales have not been generated yet. This will be done by the scripts.
 ```sh
-pacstrap /mnt base linux linux-headers linux-lts linux-lts-headers linux-firmware nano git intel-ucode
+pacstrap /mnt base linux linux-headers linux-firmware nano git intel-ucode
 ```
 
 9. Generate fstab
