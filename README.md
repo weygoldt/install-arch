@@ -1,4 +1,5 @@
-# Arch linux installation helper
+# My arch linux installation helper
+**Disclaimer:** This was created for personal documentation of my setup to make my setup more reproducible. Do not use this as a guide.
 
 Three scripts to help me install (1) the arch base system, (2) the kde plasma desktop environment and (3) the software I use on a daily basis. This repository is still work in progress and not fully functional yet. The scripts are modified versions of the arch install helper scripts from [eflinux](https://gitlab.com/eflinux).
 
