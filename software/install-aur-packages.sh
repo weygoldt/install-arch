@@ -13,8 +13,6 @@ PACKAGES=(
     visual-studio-code-bin          # text editor for the lazy
     espanso-git                     # espanso unstable from git
     1password                       # password manager for web
-    timeshift                       # for snapshots
-    timeshift-autosnap              # for autosnaps before system upgrades
     optimus-manager                 # to manage hybrid graphics
     optimus-manager-qt              # a frontend for qt based desktop environments
     zramd                           # to enable zram

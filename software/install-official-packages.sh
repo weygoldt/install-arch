@@ -13,7 +13,8 @@ PACKAGES=(
         biber                   # better tex citation backend
         pandoc                  # document converter
         firefox                 # standard browser
-        inkscape                # vector editor    
+        inkscape                # vector editor 
+        gimp                    # gnu image manipulation program   
         qbittorrent             # torrents
         vlc                     # media player    
         ufw                     # firewall
