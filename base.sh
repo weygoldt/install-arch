@@ -50,6 +50,11 @@ PACKAGES=(
     nvidia-dkms                 # nvidia driver for dkms (in case of kernel switch)
     nvidia-utils                # stuff for nvidia
     nvidia-settings             # nvidia settings manager
+    nvidia-prime                # to run applications on this card
+    nvtop                       # to view nvidia activity
+    cuda                        
+    cuda-tools
+    cudnn
 
     # Bluethooth
     bluez                       # for bluetooth

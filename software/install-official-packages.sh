@@ -22,11 +22,13 @@ PACKAGES=(
         neofetch                # for quick system overview
         tk                      # Some python gui lib (was dependency for something?)
         r                       # statistical computing
+        arduino                 # arduino IDE
         youtube-dl              # download video and audio
         conky                   # best system monitor
         filelight               # disk usage overview
         cronie                  # from cronjobs (e.g. timeshift)
-        python-pip              # to manage python modules    
+        python-pip              # to manage python modules
+        htop                    # system monitor 
 )
 
 # install package list

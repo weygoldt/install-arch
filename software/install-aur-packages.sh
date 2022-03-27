@@ -19,6 +19,7 @@ PACKAGES=(
     btrbk                           # makes backups of btrfs snapshots
     mbuffer                         # required by btrbk
     #grub-btrfs                     # adds btrfs snapshots to grub (read doc first)
+    ttf-windows                     # calibri, segoe ui, etc
 )
 
 # install package list
