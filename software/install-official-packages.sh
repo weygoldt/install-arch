@@ -34,7 +34,8 @@ PACKAGES=(
 # install package list
 sudo pacman -S --noconfirm ${PACKAGES[@]}
 
-# Enable firewall (did not execute last time?)
+# Enable firewall
+sudo systemctl enable ufw
 sudo ufw enable
 
 # Change default shell to zsh (also did not execute for some reason)
