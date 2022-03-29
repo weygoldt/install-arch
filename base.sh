@@ -46,12 +46,12 @@ PACKAGES=(
 
     # Graphics drivers
     xf86-video-intel            # proprietary intel needed for hybrid graphics
-    nvidia                      # nvidia driver for linux kernel
-    nvidia-lts                  # nvidia driver for linux-lts kernel
-    nvidia-dkms                 # nvidia driver for dkms (in case of kernel switch)
+    # nvidia                      # nvidia driver for linux kernel
+    # nvidia-lts                  # nvidia driver for linux-lts kernel
+    nvidia-dkms                 # nvidia driver for dkms for all kernels
     nvidia-utils                # stuff for nvidia
     nvidia-settings             # nvidia settings manager
-    nvidia-prime                # to run applications on this card
+    nvidia-prime                # to run applications on this card, does not work for some reason
     nvtop                       # to view nvidia activity
     cuda                        
     cuda-tools
