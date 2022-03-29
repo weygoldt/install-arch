@@ -20,6 +20,7 @@ PACKAGES=(
     mbuffer                         # required by btrbk
     #grub-btrfs                     # adds btrfs snapshots to grub (read doc first)
     ttf-windows                     # calibri, segoe ui, etc
+    davinci-resolve                 # video editing, requires multilib enabled, only workds with nvidia
 )
 
 # install package list

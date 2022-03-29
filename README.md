@@ -95,9 +95,9 @@ Add modules for file system
 ```sh
 nano /etc/mkinitcpio.conf
 # Then add
-MODULES=(btrfs)
+MODULES=(btrfs i915)
 # Rebuild initramfs by running
-mkinitcpio -p linux # change if another kernel is installed
+mkinitcpio -p linux linux-lts# change if another kernel is installed
 ```
 Some missing firmware warnings are normal
 
@@ -130,9 +130,18 @@ cd /
 17. Reboot - 
 Now we should be greeted with sddm and boot into kde. Login as the created user.
 
-1.  Install software with the scripts provided in `arch-install/software/`. Be sure to use all scripts since they partially depend on each other. E.g. `cronie` is available in the official repositories and `timeshift` only in the AUR but `timeshit` needs `cronie` for scheduled snapshots.
+18. Optional: enable multilib
+Some packages, such as davinci-resolve, require 32bit packages that are found the in the multilib repo.
+To enable, uncomment the lines
+```sh
+[multilib]
+Include = /etc/pacman.d/mirrorlist
+```
+in `/etc/pacman.conf`
 
-2.  To do list after installation
+19. Install software with the scripts provided in `arch-install/software/`. Be sure to use all scripts since they partially depend on each other. E.g. `cronie` is available in the official repositories and `timeshift` only in the AUR but `timeshit` needs `cronie` for scheduled snapshots.
+
+20. To do list after installation
 - Setup timeshift snapshots
 - Clone dotfiles
 - Check that ufw and zram is enabled

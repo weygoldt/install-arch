@@ -45,6 +45,7 @@ PACKAGES=(
     dkms                        # dynamic kernel module support
 
     # Graphics drivers
+    xf86-video-intel            # proprietary intel needed for hybrid graphics
     nvidia                      # nvidia driver for linux kernel
     nvidia-lts                  # nvidia driver for linux-lts kernel
     nvidia-dkms                 # nvidia driver for dkms (in case of kernel switch)
