@@ -28,7 +28,7 @@ PACKAGES=(
         filelight               # disk usage overview
         cronie                  # from cronjobs (e.g. timeshift)
         python-pip              # to manage python modules
-        htop                    # system monitor 
+        bashtop                 # system monitor 
 )
 
 # install package list
