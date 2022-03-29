@@ -25,7 +25,7 @@ PACKAGES=(
         arduino                 # arduino IDE
         youtube-dl              # download video and audio
         conky                   # best system monitor
-        filelight               # disk usage overview
+        ncdu                    # disk usage overview
         cronie                  # from cronjobs (e.g. timeshift)
         python-pip              # to manage python modules
         bashtop                 # system monitor 
