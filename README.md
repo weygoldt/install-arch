@@ -142,9 +142,12 @@ in `/etc/pacman.conf`
 19. Install software with the scripts provided in `arch-install/software/`. Be sure to use all scripts since they partially depend on each other. E.g. `cronie` is available in the official repositories and `timeshift` only in the AUR but `timeshit` needs `cronie` for scheduled snapshots.
 
 20. To do list after installation
-- Setup timeshift snapshots
+- Setup btrbk snapshots and backups
 - Clone dotfiles
 - Check that ufw and zram is enabled
-- Setup external drive with system image backup
 - Change root and user passwords (default: password)
 - Add conky startup script to kde startup scripts in system settings
+- Get themes
+  - Global theme: https://store.kde.org/p/1633675/
+  - Icons: https://store.kde.org/p/1686927/
+  - Cursors: https://store.kde.org/p/1662218/
