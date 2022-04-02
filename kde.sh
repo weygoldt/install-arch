@@ -10,7 +10,7 @@ sudo pacman -Syy
 sudo pacman -S --noconfirm xorg sddm plasma # plasma meta 
 
 # sudo pacman -S --noconfirm kde-applications # all kde applications
-sudo pacman -S --noconfirm ark dolphin dolphin-plugins ffmpegthumbs gwenview qt5-imageformats kdegraphics-thumbnailers kdesdk-thumbnailers kfind konsole okular partitionmanager spectacle flatpak kwalletmanager
+sudo pacman -S --noconfirm ark dolphin dolphin-plugins ffmpegthumbs gwenview qt5-imageformats kdegraphics-thumbnailers kdesdk-thumbnailers kfind konsole okular partitionmanager spectacle flatpak kwalletmanager kcolorpicker kcolorchooser
 
 # get aur helper
 cd ~
