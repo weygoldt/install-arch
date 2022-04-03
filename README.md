@@ -175,6 +175,13 @@ user input.
 
 1.  To do list after installation
 - Setup btrbk snapshots and backups
+- **ENABLE FSTRIM:**
+```sh
+sudo systemctl enable fstrim.timer
+sudo systemctl start fstrim.timer
+# verify that it is running
+sudo systemctl list-timers --all
+```
 - Clone dotfiles
 - Check that ufw and zram is enabled
 - Change root and user passwords (default: password)
