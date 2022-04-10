@@ -175,14 +175,12 @@ user input.
 
 1.  To do list after installation
 - Setup btrbk snapshots and backups
-- **ENABLE FSTRIM:**
-```sh
-sudo systemctl enable fstrim.timer
-sudo systemctl start fstrim.timer
-# verify that it is running
-sudo systemctl list-timers --all
-```
 - Clone dotfiles
+- Make sure that btrfs qgroups are disabled since they are very buggy for now:
+```sh
+sudo btrfs quota disable /
+# and repeat for all mountpoints
+```
 - Check that ufw and zram is enabled
 - Change root and user passwords (default: password)
 - Add conky startup script to kde startup scripts in system settings

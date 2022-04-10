@@ -38,6 +38,8 @@ PACKAGES=(
     nss-mdns                    # ? (glibc plugin providing host name resolution via mDNS)
     acpid                       # ? (power management)
     ntfs-3g                     # ntfs file system utils
+    exfat-utils                 # exfat file syste
+    exfatprogs
 
     # LTS Kernel
     linux-lts                   # lts kernel
