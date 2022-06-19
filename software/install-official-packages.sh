@@ -29,6 +29,10 @@ PACKAGES=(
         cronie                  # from cronjobs (e.g. timeshift)
         python-pip              # to manage python modules
         bashtop                 # system monitor 
+        ifuse                   # below all for IPhone support 
+        usbmuxd 
+        libplist 
+        libimobiledevice
 )
 
 # install package list
